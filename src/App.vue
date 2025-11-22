@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import Count from './components/Count.vue';
-import Two from './components/Two.vue';
+import Father from './components/v-model/Father.vue';
 </script>
 
 <template>
   <h1>You did it!</h1>
-  <Count />
-  <Two />
+  <Father />
 </template>
 
 <style scoped></style>
