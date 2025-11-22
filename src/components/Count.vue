@@ -1,11 +1,13 @@
 <script setup>
-import useCountStore from '@/store/count'
-const countStore = useCountStore()
-console.log('countStore', countStore);
+import emitter from '@/utils/emitter';
+import { onMounted } from 'vue';
+onMounted(() => {
+    emitter.emit('getCount', 'CountData')
+})
 </script>
 
 <template>
-    <h1>{{ countStore.sum }}</h1>
+    <h1>Count</h1>
 </template>
 
 <style scoped lang='scss'></style>
