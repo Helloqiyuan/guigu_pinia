@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Father from './components/v-model/Father.vue';
+import Father from './components/$attrs/Father.vue';
 </script>
 
 <template>
